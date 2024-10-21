@@ -1,0 +1,44 @@
+.container {
+    display: flex;
+    flex-direction: column; /* nessse contexto, joga um elemento para baixo do outro */
+    height: 100vh;
+    background-image: url("../images/wall.png");
+}
+
+.menu {
+    display: flex; /* lado a lado */
+    justify-content: space-evenly; /* espaço entre elementos*/
+    align-items: center;
+
+    height: 90px;
+    width: 100%;
+    background-color: rgb(226, 153, 17);
+    color: rgb(255, 255, 255);
+    border-bottom: 5px solid rgb(82, 47, 47);
+}
+
+.panel {
+  margin: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.square {
+    height: 150px;
+    width: 150px;
+    border: 2px solid rgb(0, 0, 0);
+    background-color: rgba(190, 38, 38, 0.897);
+    border-radius: 30px;
+}
+
+.enemy {
+    background-image: url("../images/ralph.png");
+    background-size: cover; /*vai pegar o tamanho e largura da caixa*/
+}
+
+.menu-time h2:nth-child(2), 
+.menu-score h2:nth-child(2) {
+    margin-top: 1rem;
+    
+}
